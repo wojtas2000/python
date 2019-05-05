@@ -1,0 +1,1 @@
+# dopisz do pliku zad5.txt nowa linie "Ala go kocha, a kot ją wcale"

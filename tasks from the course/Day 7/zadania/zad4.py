@@ -1,0 +1,1 @@
+# wczytaj plik zad4.txt zawierajacy liczby w kolejnych wierszach i wypisz na ekran sumę tych liczb

@@ -1,0 +1,42 @@
+dziedziczenie diamentowe, 
+pola klasy, 
+metody klas 
+metody statyczne
+pola i metody pseudo-prywatne
+properties - gettery - s.
+
+dziedziczenie diamentowe - klasa mo¿e dziedziczyæ z wielu klas, 
+wszystkie dziedzicz¹ z jednej klasy object
+w momncie kiedy nie znajdzie metody z swojej klasie to szuka wy¿ej u rodziców, 
+je¿eli dziedziczy z wiêcej ni¿ jedej klasy to szuka od lewej do prawej, 
+
+nie mo¿emy u¿ywaæ super() kiedy dziedziczy z wiêcej ni¿ jednej klasy
+print(klasa.mro()) # drukuje kolejnoœc gdzie bêdzie szukaæ metod
+
+
+class Mixin():
+    pass
+class ZlaKlasa(object, Mixin): # to nie zadzia³a 
+    pass
+
+
+pola klasy - metody klasy, s³u¿¹ do przechowywania danych klasy
+wspólne dla wszystkich metod klasy
+zmienna na poziomie klasy
+
+metody klasy - uzywamy u¿ywamy dekoratora, @nazwametody 
+pierwszym argumentem jest cls - czyli klasa
+
+metody statyczne - jest na klasie - nie przyjmuje cls, nie uzywamy pól z kalsy, metoda sie przyda do tej klasy (te¿ dekorator) @staticmethod, najzwyklejsza funkcja
+
+metody
+pseudo-prywatne
+enkapsulacja 
+python daje tak¹ mo¿liwoœæ - towrzenia prywatnych metod i pól
+self.__moja_metoda_prywatna(self, arg)
+
+properties
+w³aœciwoœci 
+Getter - s³u¿y do zwrócenia wartoœci ze zmiennej 
+setter - do walidacji, obiczenie matematyczne
+

@@ -1,0 +1,37 @@
+fukcje - definiowanie, argumenty
+
+funkcja - zamkn¹æ fragment kodu
+
+def do_nothing():
+	pass
+
+x = do_nothing - funkcja jest obiektem wiêc mo¿na j¹ przypisaæ
+x() - zmienn¹ z funkcj¹ mo¿na wywo³aæ 
+
+funkcja mo¿e mieæ jeden - kilka argumentów.
+
+argumenty nazwane = domyœlne
+
+def funkcja(x, y=10)
+argument jest sprawdzany tylko przy pierwszym wywo³aniu 
+
+funkcja zwraca wartoœæ przez return
+return koñczy dzia³anie funkcji 
+przerywa dzia³anie funkcji - nawet jeœli coœ jeszcze po nim jest w funkcji 
+
+zakres zmiennej lokalne i globalne 
+lolalne - wewn¹trz funkcji, dostêp ma tylko funkcja
+globalne - zadeklarowane poza funkcj¹, funkcja ma dostêp do globalnej, jeœli zadeklarujemy w œrodku funkcji tak¹ sam¹ zmienn¹ to tracimy dostêp do zmiennej globalnej 
+
+
+docstring - dokumentuj¹c kod 
+kied kod bêdzie czyta³ ktoœ inny
+zwyk³y string wielolinijkowy """tekst"""
+od razu po fesinicji funkcji 
+
+
+
+
+
+
+ 

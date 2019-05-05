@@ -1,0 +1,1 @@
+# otworz plik csv zad9.csv zawierajacy imiona i nazwiska i wypisz na ekran w kazdej lini - najpierw nazwisko potem imię, oddzielone spacją

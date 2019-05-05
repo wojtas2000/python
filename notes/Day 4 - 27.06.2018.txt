@@ -1,0 +1,58 @@
+pêtle 
+range 
+
+warto najpierw rozrysowaæ schemat blokowy a potem przejœæ do implementacji
+- akcje
+- decyzje (if)
+- pêtle (nie wiemy ile razy, a jak wiemy to nie musimy sie powtarzaæ)
+
+while (wartoœæ True):
+kod
+...
+update wartoœæi logicznej na false
+
+(bez update pêtla mo¿e wykonywaæ siê w nieskoñczonoœæ)
+(lub przerwaæ, break)
+
+liczba = 0 
+
+
+while liczba < 10:
+    
+    print(liczba)
+    
+    liczba += 1
+
+
+pêtla for
+for element in zbiórz/zakres:
+kod
+...
+coœ z element mo¿emy zrobiæ
+...
+kod
+
+zmienna z pêtli for istnieje - jeœli wykona³a siê chocia¿ raz
+
+
+zakres:
+range
+range(stop)
+range(3) - <0,1,2>
+
+range(start, stop)
+range(4,8) - <4,5,6,7>
+
+range(start, stop, krok)
+range(0,10,3) - <0,3,6,9>
+
+for liczba in range(ilosc):
+...
+stopu nie uwzglêdnia!
+
+continue - pomija pozosta³e instrukcje - idzie do pocz¹tku pêtli
+break - przerywa dzia³anie pêtli, 
+lepiej tak pisaæ kod aby ich nie u¿ywaæ 
+
+
+

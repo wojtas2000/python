@@ -1,0 +1,60 @@
+import, listy, kopiowanie list, tuple (krotka)
+import - pobranie modu³u, (from modu³ import finkcja)
+(python zawiera wiele biblitek)
+
+preferowanie pobierania ca³ych modu³ów
+
+bardzo nie polecane to importowanie z gwiazdk¹ 
+
+w listach mo¿emy przechowywaæ, int, string, list, itd.
+
+lista = list(range(2,5))
+lista1 = []
+lista2 = [1, "dwa", 3]
+
+list()
+[]
+
+do elementu po index, wycinki list, dodawaæ elementy
+
+w listach najwa¿niejsze jest - mo¿na iterowaæ 
+lista - kolekcja któr¹ mo¿emy edytowaæ 
+
+listy mo¿na zagnie¿d¿aæ.
+lista = [[1,2,3], [4,5,6], [7,8,9]]
+lista[1][2] == 6
+dane dwuwymiarowe 
+
+kopiowanie list 
+lista - typ referencyjny - przypisujemy adres w pamiêci 
+nowa_lista = lista.copy()
+nowa_lista = stara_lista[:]
+
+p³ytka kopia - kopiowanie tylko pierwszego poziomu
+
+
+przesuniêcie bitowe 
+
+0100
+<< 1 przesuniêcie o 1
+1000
+
+przesuniêcie 2 to podniesienie do potêgi 
+
+krotki (tuple) 'tupla' - niezmienna lista
+tuple1 = ("raz", "dwa", "trzy")
+x = "raz", 
+y = "raz", "dwa"
+
+rozpakowanie krotki
+tuple1 = ("raz", "dwa", "trzy")
+x,y,z = tuple1
+
+print(x)
+>>> "raz"
+....
+
+
+
+
+

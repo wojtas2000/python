@@ -1,0 +1,67 @@
+
+- wstêp do obiektowoœci
+rodzaj uporz¹tkowania kodu (myœlenie jako ca³osæ)
+wszystko jest obiektem, mo¿emy tworzyæ w³asne obiekty, 
+
+- klasy (instancje klas == obiekty)
+typ danych, reprezentacja obiektu, instancja - przyk³ad, konkretnie
+123 - instancja klasy int
+x = "Natalia", x - instancja klasy string
+
+- instancje
+mo¿emy tworzyæ i niszczyæ instancje obiektów
+
+- atrybuty i metody klas
+
+reprezentacja wewnêtrzna obiektu powinna byæ prywatna
+
+klasa - idea, schemat, wyobrazenie (kot, piec, drzewo)
+mo¿e mieæ du¿o instancji
+stworzenie - nazwa, w³aœciwoœci
+u¿ywanie - stworzenie instancji klasy
+dziedziczenie - reu¿ycie czêœci kodu w podklasie (elementy klasy ojca i swoje)
+
+
+instancja - powo³any do ¿ycia obiekt, konkretny obiekt, konkretne atrybuty, miejsce w pamiêci
+konkretnej klasy
+
+Zalety:
+- uporz¹dkowanie kodu
+- divide and concquer (dziel i zwyciê¿aj) 
+- zwiêksza modularnoœæ
+- zmniejsza kompleksowoœæ - ³atwiejszy do zrozumienia
+- u³atwiaj¹ ponowne u¿ycie kodu
+
+class Samochod(object):
+	#definicja danych
+	#definicje metod
+
+stosujemy nazwy z du¿ych liter
+object - dziedzicz¹ z tej klasy (nadrzêdna)
+
+CamelCase - tak piszemy klasy
+snak_case - tak piszemy funkcje
+
+atrybury - przez konstruktor:
+def accelerate(self, value):
+	self.speed +=value
+
+def __init__(self, marka, model):
+	self.marka = marka
+	self.model = model
+
+self - parametr referencja instancji
+model, marka - dane inicjuj¹ce
+
+wszystkie metofy od def i pierwszy parametr self
+
+podwójny podkreœlik - dunder
+
+
+paradygmaty OOP (zorientowany jêzyk na obiekty):
+- enkapsulacja(hermetyzacja) - ka¿da klasa powinna chowaæ swoj¹ implementacje, jasne metody(nazwy),
+to nie interesuje u¿ytkowników, wystawiamy jasny interfejs
+- dziedziczenie (rozszerzenie nadrzêdnej klasy)
+- poliformizm (obiejtów klas pochodnych mo¿emy u¿ywaæ tak jak rodziców)
+
+samochod3 = samochod # NIE TWOrzymy NOWEGO OBIEKTU, tylko wska¿nik jak w liœcie

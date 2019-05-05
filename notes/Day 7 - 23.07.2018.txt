@@ -1,0 +1,96 @@
+importowanie modu³ów
+s³owniki
+praca z plikami
+pliki csv (wartoœci oddzielone przecinkami)
+
+import sys
+import os
+
+sys.path - œcie¿ki wyszukiwania python
+
+os.getcwd() - aktualny folder roboczy
+
+pycharm - tworzy w³asne œrodowisko uruchomieniowe
+
+import nazwa_pliku_bez_py
+import katalog.nazwa_pliku
+
+from dir1.dir2 import nazwa_pliku
+
+nazwa pliku nie mo¿e zaczynac siê od cyfry
+oraz
+nie mo¿e zawieraæ polskie znaki oraz spacje
+
+kiedy importujemy modu³ - importowane jest wszystko z niego
+w modu³ach powinniœmy unikaæ kodu poza funkcjami (chyba ¿e chcemy)
+
+s³owniki - dict{}
+
+zbiór elementów, zawiera klucz i wartoœæ
+klucz - typ niezmienny, musi byæ unikalny
+wartoœæ - mog¹ byæ powtórzone 
+odwo³ujemy siê przez klucz a nie index
+
+domyœlnie s³ownik sprawdza po kluczu 
+
+jest najszybszym zbiorem wartoœci
+
+
+praca z plikami - najczêœciej pliki tekstowe
+
+plik = open("œcie¿ka_do_pliku", tryb)
+tryby:
+r - tylko odczyt
+w - zapisywanie pliku (stary plik o tej samej nazwie bêdzie usuniêty)
+r+ - do odczytu i zapisu
+a - odpisywanie do pliku (append - dopisuje na koñcu, nie odczytamy)
+
+
+plik = open("plik.txt")
+	#kod...
+plik.close()
+
+otwieranie pliku za pomoc¹ pêtli with
+
+with open("plik.txt") as plik:
+	#kod...	
+	print(plik.readline())
+po skoñczeniu bloku, zamyka plik
+
+
+plik.read() - ca³y plik - jako jeden string
+plik.read(100) - 100 znaków
+
+plik.readline() - odczytanie jednej linii, razem ze znakiem \n
+
+plik.readlines() - odczytuje ca³y tekst, jako tablice
+
+for line in plik:
+	print(line, end='')
+
+
+plik.write(string) - zapisuje string
+
+plik.writelines(iterable) - zapisuje jako poszczególne linie w pliku. 
+znak nowej linii powinien nale¿eæ do stringa
+
+plik musi byæ otwarty w trybie do zapisu aby móc go zmieniæ
+ 
+
+
+csv - Comma separated values - oddzielone przecinkami 
+
+Imie,Nazwisko,Adres,Telefon (\n)
+Joanna,Kowalska,Gdañsk, 587905684
+
+do obs³ugi CSV mo¿na u¿yc biblioteki csv
+
+
+
+
+
+
+
+
+
+

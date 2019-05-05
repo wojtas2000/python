@@ -1,0 +1,53 @@
+debugowanie
+wyj¹tki
+refektoryzacja
+
+
+debagowanie
+odnajdywanie i usuwanie b³êdów 
+
+³atwiej napisaæ prosty kod ni¿ go debugowaæ
+
+za pomoc¹ funkcji print()
+za pomoca debuggera (pythontoutor)
+za pomoc¹ gumowej kaczki - t³umaczyæ kod Ÿród³owy 
+
+
+wyj¹tki
+"³atwiej prosiæ o wybaczenie ni¿ o pozwolenie"
+
+syntax error - b³¹d w sk³adni polecenia
+exception, error = wyj¹tki - inaczej b³êdy powsta³e w trakcie wykonywania programu
+
+wyj¹tki mo¿emy wywo³ywaæ samemu.
+
+try:
+	#kod
+
+except typb³êdy:
+	#kod wywo³any gdy zostanie przechwycony b³¹d
+
+finally: (nieobowi¹zkowy) - najczêœciej u¿ywany do zamykania plików, do sprz¹tania
+	#kod wywo³any zawsze nie wa¿ne czy bêdzie czy nie bêdzie b³êdu
+
+
+wyj¹tki:
+ogólne - exception
+szczególne - valueError, nameError
+
+staramy siê ³apaæ szczegó³owe 
+
+bloków except mo¿emy tworzyæ kilka
+w przypadku wy³apania jednego kodu - ten wyj¹tek zostanie wywo³any
+jeœli bêdzie szczególowy a potem ogólny - wykona pierwszy 
+
+wyzwanie wyj¹tków
+raise ValueError("To jest komunikat")
+pokazanie u¿ytkownikowi ¿e Ÿle robi
+
+
+refaktoryzacja
+proces poprawiania struktury kodu, bez zmiany jego funkcjonalnoœci 
+kod powinien byæ napisany aby by³ zrozumiany dla ludzi 
+
+

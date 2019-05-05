@@ -1,0 +1,38 @@
+blok kodu w pythonie
+oznaczenie bloku kodu - wciêcia (4 spacje - zalecana iloœæ)
+dwukropek rozpoczynaj¹cy blok
+
+instrukcja warunkowa
+if - elif - else
+if (warunek):
+	jakiœ warunek
+elif (inny warunek):
+	jakiœ warunek2
+else:
+	nieobowi¹zkowe, wykona sie jeœli wszystkie inne nie zosta³y spe³nione
+
+tablice warunkowe - tablica logiczna
+and, or
+
+jeœli któryœ w elif warunek siê zgadza ale ju¿ jeden by³ wykonany to przeskoczy go i pójdzie do else
+
+pusty string jest wg bool - nie prawda
+samo porównanie nie zmienia typu
+
+dokumentacje offline - w consoli 
+dir() - wyœwietla sk³adniki modu³u
+help() - wyœwietla dokumnetacjê / pomoc modu³u, funkcji
+
+code style zen of python:
+- intencje jasne, bezpoœrednie 
+- czytelnoœæ wa¿na 
+
+pep 8 
+
+"""DO nazwy zmiennych piszemy z podkreœlikami"""
+snake_case = 'zamiast spacji podkreœlniki'
+"""do operatora przypisania po jednej spacji a = 5"""
+"""operatory porównania te¿ jedna spacja """
+"""zostawiaæ na koñcu pust¹ liniê"""
+cammelCase = 'garb jak wielb³¹d'
+"""miêdzy ifami jedna pusta linia"""

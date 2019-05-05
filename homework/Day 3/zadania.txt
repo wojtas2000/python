@@ -1,0 +1,82 @@
+﻿Jak w zadaniu jest napisane "przyjmuje" to rozumiem uzycie inputu ;)
+
+Zad 1.
+Przyjmuje od uzytkownika napis i wyswietla “Access allowed” jesli uzytkownik wpisal
+"haslo" lub “Access denied. This incident will be reported.” w przeciwnym wypadku.
+
+https://imgs.xkcd.com/comics/incident.png
+
+
+Zad 2.
+Program przyjmuje liczbe i wypisuje “Wspaniala liczba milordzie!” jesli liczba jest w zakresie 5 < x < 12, gdy jest mniejsza od 5 “Za malo!”, gdy wieksza o 12 “Za duzo!”
+
+
+Zad 3.
+Sprawdź czy liczba jest podzielna przez 3, 5, 7. Wypisac odpowiednie komunikaty.
+
+Do sprawdzenia podzielnosci mozna uzyc znaku a%b - reszta z dzielenia a przez b. Liczba podzielna ma resztę z dzielenia równą 0.
+
+
+Zad 4.
+Zgodnie z nową “Ustawą o rejestracji jachtów i innych jednostek pływających o długości do 24 m” obowiązkowi rejestracji podlegają jachty do długości od 7.5 metra. W przypadku poprzednich aktów prawnych było to 12 m. W obu ustawach krótsze jachty mogły być rejestrowane dobrowolnie.
+Napisz program, który przyjmuje długość jachtu i wypisuje informację zgodne z nowym stanem prawnym:
+Jacht nie podlega ustawie (powyzej 24 m)
+Jacht podlegał obowiązkowej rejestracji i podlega ponownej rejestracji (powyzej 12m)
+Jacht podlegał dobrowolnej rejestracji, będzie podlegał obowiązkowej rejestracji (powyzej 7.5m)
+Jacht podlega dobrowolnej rejestracji (ponizej 7.5m)
+
+
+Zad 5.
+ Po podaniu ilości punktów podaj ocenę na podstawie progu procentowego:
+  5 od 90%, 4+ od 80, 4 od 70, 3+ od 60, 3 od 50
+
+
+Zad 6.
+Oblicz czy podany rok jest przestępny
+Czyli podzielny przez 4 oraz niepodzielny przez 100 lub podzielny przez 400
+
+
+Zad 7.
+Podane 3 boki trojkata, określ
+- czy uda sie narysowac trojkata
+ * dl. jednego boku musi byc < dlugosc sumy dwoch pozostalych
+- czy jest to tr. roznoboczny, rownoramienny czy rownoboczny
+
+
+Zad 8.
+Zamiana temperatury
+     wejscie: Temperatura w  C lub F zapisana jako “{xxx}C” lub “{xxx}F”
+     np.: "35C" "100F"
+     wyjście "Temperatura w {typ} to {xxx} stopni"
+     C = (F - 32) * (5/9)
+     F = C * (9 / 5) + 32
+
+podpowiedz: musimy sprawdzic ostatnia litere a przed zmiana typu na int ja "odciac"
+
+
+Zad 9.
+input1 - miesiąc
+input2 - dzien,
+okreslic pore roku
+
+
+Zad 10.
+Sprawdź czy jest wygrana w kółko i krzyżyk
+ input: string 9 znaków x, o, n
+ znaki oznaczają pozycje wierszami od gornego
+
+np. x0x
+    0x0
+    x0n
+
+zapisane jako x0x0x0x0n
+
+
+
+
+Zad 11* (z gwiazdka).
+Napisz prosty kalkulator:
+Program przyjmuje najpierw dwie liczby a nastepnie jeden znak z zestawu:
++ - * /
+Nastepnie wykonuje podana operacje na podanych wczesniej liczbach.
+Wypisuje na ekran bledy jesli nieznana operacja lub dzielenie przez 0.

@@ -1,0 +1,43 @@
+klasy c.d.
+przeci¹¿anie metod specjalnych i operatorów
+dziedziczenie 
+
+
+metody specjalne (magiczne)
+nie bezpoœrednio przez nas, tylko przez ¿ycie obiektu
+metoda __init__ - podczas tworzenia obiektu, 
+magiczne - dunder __nazwa__
+- mo¿e implementowaæ zachowania ró¿ne 
+- __add__ - zdefiniowaæ tak aby dodaæ 
+- __sub__
+- __eq__
+- __len__
+- __str__ - jak skastowaæ do stringa -> print(self)
+
+
+dziedziczenie:
+np klasa zwierze (atrybuty i w³aœciwoœci), atrybuty np ¿yj, 
+dziedziczy z niej cz³owiek, kot, pies
+dziedziczy z cz³owiek, klasa student
+
+class Zwierze:
+ 	# definicje metod i danych
+
+class Czlowiek(Zwierze):
+	# definicje metod i danych
+
+class Student(Czlowiek):
+	# definiczje metod i danych
+
+isistance(obiekt, klasa) sprawdza czy dany obiekt jest istancj¹  klasy
+issubclass(klasaA, klasaB) - czy klasaA dziedziczy z podklasy klasaB
+
+
+
+
+
+
+
+
+
+

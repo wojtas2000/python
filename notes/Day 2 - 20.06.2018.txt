@@ -1,0 +1,45 @@
+IDE - zintegrowane œrodowiska developerskie (np. pycharm, atom, visual studio)
+IDE online - trinket.io, pythonanywhere.com
+
+PYTHONTUTOR.COM - dok³adnie pokazuje krok po kroku co robi, dobrze narzêdzie,
+
+pamiêæ 
+-stosy, sterty system
+python - automagia :)
+
+zmienne 
+podstawowe
+int, float, str, bool (True/False), None
+
+listy, s³otniki, tuple
+pliki, w³asne typy 
+
+zmienna - obszar pamiêci któr¹ nazywany (przypisujemy) 
+= przypisuje to co jest po prawej stronie do tego co jest po lewej stronie 
+wszystko po prawej stronie musi siê wykonaæ dopiero wtedy przypisze siê do lewej strony 
+
+
+operatory 
+matematyczne
+logiczne - zwracaj¹ bool`owsk¹ wartoœæ 
+
+
+input zawsze podaje string - trzeba go przekonwertowaæ na inta lub float
+zmienna nie mo¿e siê zaczynaæ od liczby
+zmienna o tej samej nazwie ale z jednym znakiem np du¿ym to dwie ró¿ne zmienne
+
+float
+liczba = S * M * 2^E
+S - 0 lub 1
+M = Mantysa
+E = wyk³adnik
+
+print(0.3 == (0.1 * 3)) -> da False !!!
+
+metody == funkcje 
+funkcje podajemy po kropce
+
+nazwisko = "Kowalski
+od_tylu = nazwisko[::-1]
+print("Kowalski [::-1] ->", od_tylu)
+"""[a:b:c] a - od której (w³¹cznie), b - do której (bez niej), c - skok"""

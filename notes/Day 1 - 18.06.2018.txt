@@ -1,0 +1,27 @@
+algorytmy - "skoñczony zestaw instrukcji potrzebny do wykonania zadania"
+z³o¿onoœæ algorytmiczna 
+przyk³ad algorytmu - dzielenie na pó³ 
+
+kompilowane vs interpretowane
+
+PYTHON
+polecenia, instrukcje warunkowe, pêtle
+jêzyk interpretowany (linijka po linijce)
+wa¿niejszy jest czas programisty ni¿ czas maszyny
+
+git hub
+umo¿liwia cofanie zmian, ³¹czenie ga³êzi
+wydajemy komendy konsol¹
+mo¿na wymieniaæ siê, wysy³ac na serwer itd
+
+git clone - tworzenie/kopiowanie lokalnie
+git pull - pobieranie zmian do katalogu (bêd¹c w tym katalogu)
+git init 0 nowego repozytorium
+-add - doodanie pików 
+gitlab - opensource
+
+
+
+
+
+

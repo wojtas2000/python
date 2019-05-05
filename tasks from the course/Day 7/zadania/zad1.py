@@ -1,0 +1,1 @@
+# otwórz za pomoca Pythona plik 'zad1.txt' i wypisz jego zawartosc na ekran

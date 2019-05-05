@@ -1,0 +1,286 @@
+dzieñ 10 
+%%%%%%%%%%%%%%%
+- wstêp do obiektowoœci
+rodzaj uporz¹tkowania kodu (myœlenie jako ca³osæ)
+wszystko jest obiektem, mo¿emy tworzyæ w³asne obiekty, 
+
+- klasy (instancje klas == obiekty)
+typ danych, reprezentacja obiektu, instancja - przyk³ad, konkretnie
+123 - instancja klasy int
+x = "Natalia", x - instancja klasy string
+
+- instancje
+mo¿emy tworzyæ i niszczyæ instancje obiektów
+
+- atrybuty i metody klas
+
+reprezentacja wewnêtrzna obiektu powinna byæ prywatna
+
+klasa - idea, schemat, wyobrazenie (kot, piec, drzewo)
+mo¿e mieæ du¿o instancji
+stworzenie - nazwa, w³aœciwoœci
+u¿ywanie - stworzenie instancji klasy
+dziedziczenie - reu¿ycie czêœci kodu w podklasie (elementy klasy ojca i swoje)
+
+instancja - powo³any do ¿ycia obiekt, konkretny obiekt, konkretne atrybuty, miejsce w pamiêci
+konkretnej klasy
+%%%%%%%%%%%%%%%
+
+
+------------------------------------------------------------------------------------------
+przypomnienie
+
+Python 3:
+- interpretowany, 
+- obiektowy,
+- zarz¹dza za nas pamiêci¹ (garbage collector - sam usuwa niepotrzebne zmienne)
+
+
+Jak sie deklaruje zmienne
+nazwa = wartoœæ (None, ca³kowita_liczba, zmiennoprezcinkowa, string, bool)
+
+Operatory:
+³¹czenie warunków bool or, and
+True or False == True
+True and False == False 
+
+String:
+zmienna = "napis"
+zmienna[0] == "n"
+zmienna[0:3] == "nap"
+zmienna[0:4:2] == "np"
+
+Matematyczne:
++ - * / 
+** - podnoszenie do potêgi
+% - reszta z dzielenia
+// - dzielenie bez reszty
+
+Konstrukcja warunkowa:
+if elif else
+if wartosc_bool:
+	scie¿ka jesli True
+elif inny_warunek:
+	sciezka jesli spelniony inny warunek ni¿ if
+else: (nieobowiazkowa)
+	sciezka jesli False
+
+Pêtla:
+while, for
+while warunek(dopuki spe³niony wykonuje wszystko w œrodku):
+	kod w while
+	zmieniamy_warunek_na_False
+W trakcie wykonywania nie wiemy ile razy kod ma siê wykonaæ
+
+kolekcja = range,napis,
+For element in kolekcja:
+	print(element)
+wyswietli kazdy element z kolekcji
+wiemy ile razy ma sie wykonaæ 
+
+Funkcje:
+(bloki których nie chcieiœmy powtarzac)
+def nazwa_funkcji(argument):
+	print(argument)
+
+wywo³anie - nazwa_funkcji(argument)
+
+
+def funkcja(argument_wymagany, domyslny="jakaœ wartoœæ")
+	print("coœ")
+
+wywo³anie - funkcja(argument_wymagany) lub z domyœlnym
+
+argument musi byæ podstawow¹ zmienn¹
+jeœli bêdzie np lista to bêdzie deklarowana raz na pocz¹tku tworzenia funkcji, a nie wywo³an¹
+def funkcja2(argument=[]):
+	return argument
+
+wspó³dzielona lista, za ka¿dym razem jest jedna lista, nie nowa!
+
+powinno byæ:
+def funkcja(argument_opc = None):
+	if argument_opc is None:
+		argument_opc = []
+	return argument_opc
+
+Zasiêg zmiennych wewn¹trz funkcji
+zmienne globalne:
+- zadeklarowana na pocz¹tku 
+- ka¿da funkcja ma do niej dostêp
+- global -> wewn¹trz funkcji, mo¿emy przypisac coœ do zmiennej globalnej
+
+zmienne lokalne:
+- deklarowana wewn¹trz funkcji
+- niedostêpna spoza funkcji
+
+Funkcja zewnêtrzna nie ma dostêpu do zmiennych fukncji wewnêtrznych, ale funkcja wewnêtrzna ma dostêp do zeminnych funkcji zewnêtrznej 
+
+Typ zmiennej - lista:
+- referencyjny, 
+- obiektowy
+Przypisujemy - przypisujemy wska¿nik do pamiêci
+lista = ["a", "b", "c"]
+
+lista[0] == "a" - odczyt
+lista[0] = "d" - nadpisanie
+lista[0] == "d" - odczytanie
+
+lista.append("e") - dodaje na koniec "e"
+del lista[2] - del element o index 2
+
+lista2 = lista - to nie kopiowanie tylko przypisanie nazwy do istenij¹cej listy (nowa nazwa, zmienna do istniej¹cej listy)
+lista2 = lista.copy() - to jest kopia listy (nowy wska¿nik w pamiêci, p³ytka)
+
+lista mo¿e zamieraæ inne elementy - nawet listy (macie¿) lista[0][0] - lista o indeksie 0, element o indeksie 0
+lista_nowa_maciez = lista_maciez.copy - kopiuje tylko zewnêtrzn¹ liste ale wewnatrz zawieta wska¿niki do starych list
+aby to omin¹æ trzeba import copy => lista_nowa_maciez = copy.deepcopy(lista_maciez)
+
+Krotka:
+- niezmienna lista
+- nie mo¿na usun¹æ, ani dodaæ 
+krotka = (1, 2, 3)
+
+krotka mo¿e byæ argumentem domyœlnym w funkcji
+krotke mozemy rozpakowaæ do pojedynczych zmiennych
+zmienna1, zmienna2, zmienna3 = krotka
+zmienna1 == 1
+zmienna2 == 2
+
+Zadanie:
+a = 12
+b = 8
+
+przypisz odwrotnie (w innych jêzykach):
+tmp = a
+a = b
+b = temp
+
+najlepsze wyjœcie:
+b,a = a,b
+rozpakowujemy krotkê przypisuj¹c jej odwrotne zmienne 
+
+
+S³ownik:
+slownik = {}
+- kolekcja kluczy na jakieœ wartoœci
+slownik = {"klucz": "wartosc"}
+- mapa kluczy na wartoœci bez ustalonych kolejnoœci
+- klucze musz¹ byæ unikalne 
+- klucz musi byæ wartoœæ niezmienna, bool, typ prosta, krotka
+slownik["klucz"] == "wartosc"
+
+zmienna = slownik.get("nie ma") = zwraca None jeœli nie ma takiego klucza, lub zwraca wartoœæ
+zmienna = slownik.get("nie ma", 123) = zwraca 123 jeœli nie ma takiego klucza, lub zwraca wartoœæ pod szukanym kluczem
+
+iteracja po s³ownikach:
+for klucz in slownik:
+	print(klucz)
+
+otrzymuje klucze (bez gwarancji kolejnoœci)
+
+for wartosc in slownik.values():
+	print(wartosc)
+
+for klucz, wartosc in slownik.items():
+	print(klucz,wartosc)
+
+
+
+Praca na plikach:
+uchwyt = open("plik.txt")
+uchwyt.close() - trzeba pamiêtaæ o tym aby zamkn¹æ
+
+with open("sciezka/plik.txt") as uchwyt:
+	pass - po bloku kodu zamyka plik 
+
+tryby do odczytu:
+- domyœlna wartoœæ
+- encoding="utf8" -> polskie znaki
+
+print(uchwyt.read()) - ca³y plik na raz
+print(uchwyt.readlines()) - lista stringów plus nowe linijki
+linia = uchwyt.readline
+while linia:
+	print(linia)
+	# w pamiêci na raz tylko jedna linia
+	linia = uchywt.radline()
+
+kazda z tych metod zwraca symbol nowej linii
+
+wpisywanie do plików:
+- tryb "a" - dodawanie do pliku na koñcu, utworzy plik jesli nie istnieje, nie usunie zawartoœci pliku, 
+uchwyt.write("append") - nie dodaje znaku nowej linii
+
+- tryb "w" - usuwanie oryginalnego zapisu i zapisujemy now¹ zawartoœæ
+uchwyt.write("hello world") - wpisuje bez znaku nowej linii
+uchwyt.writeline(["linia1", "linia2"]) - wpisuje liste bez znaku nowej linii 
+
+- tryb "r+" - nie usunie pliku, odczytamy i zapiszemy, wewnêtrzny wska¿nik 
+print(uchwyt.readline())
+uchwyt.write("nadpisujemy")
+
+
+Pliki CSV:
+- pliki excel
+
+with open("arkusz.csv") as uchwyt:
+	arkusz = csv.reader(uchwyt)
+	for wiersz in arkusz:
+		print(wiersz)
+(wyœwietli wszytkie wersze, nawet pierwszy z nazw¹ kolumn)
+
+with open("arkusz.csv") as uchwyt:
+	arkusz = csv.DictReader(uchwyt)
+	for wiersz in arkusz:
+		print(dict(wiersz))
+		print(wiersz["nazwa_kolumny"]
+(otrzymujemy s³owniki, pierwszy wiersz to nazwa kolumn)
+
+
+with open("arkusz.csv", "w") as uchwyt:
+	arkusz = csv.writerows(uchwyt)
+	rows = [
+		["nazwa", "cena"]
+		["banan", "2"]	
+		["jajko", "8"]
+		]	
+	arkusz.writerows(rows)
+
+
+Wyj¹tki:
+- ³apiemy wyj¹tki i radzimy sobie znim
+
+try:
+	lista = []
+	print(lista[0])
+
+except IndexError:
+	print("nie ma tego elementu o tym index")
+except ValueError:
+	print("obsluga ValueError")
+
+
+
+def funkcja(a,b):
+	try:
+		a = int(a)
+		b = int(b)	
+	except ValueError:
+		rise ValueError("musisz podaæ liczby")
+	return a + b
+
+try:
+	funkcja("a", 1)
+except ValueError as zmienna_z_wyjatku:
+	print("no jaaa")
+	print("zmienna_z_wyjatku")
+
+------------------------------------------------------------------------------------------
+
+
+
+
+
+
+

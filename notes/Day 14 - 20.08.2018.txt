@@ -1,0 +1,41 @@
+egzamin
+
+git - system kontrolowania wersji 
+u³atwia wielu dev pracowaæ nad jedn¹ wersj¹ kodu
+- mo¿liwoœæ cofania wersji (zmian)
+
+z gita mo¿na u¿ywaæ z linii komend 
+git - narzêdzie, zarz¹dza kodem, 
+nie udostêpnia miejsca 
+
+
+github - repozytoria
+- open source
+- wszystko w chmurze
+
+
+nowy projekt
+vcs
+checkout for new version
+
+
+
+jak dzia³a git?
+- commit - punkt ( do którego mo¿na siê cofn¹æ, podzieliæ)
+- branche - rozejœcia kodu
+
+
+json - notacja stryptowa java
+zapisuje dane w formacie list i s³owników 
+format tekstowy
+³atwo czyta i zapisuje 
+
+
+
+
+
+
+
+
+
+

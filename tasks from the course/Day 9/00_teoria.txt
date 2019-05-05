@@ -1,0 +1,11 @@
+Python 3 :)
+
+
+- Język interpretowany
+- Język obiektowy
+
+Python sam zarządza pamięcią - Garbage Collector
+
+
+Wszystkie dane w komputerze są zapisane binarnie!
+Czyli za pomocą 0 i 1.

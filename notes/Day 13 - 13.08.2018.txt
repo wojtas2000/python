@@ -1,0 +1,118 @@
+virtual env
+pip - menad¿er do pythona
+argumenty linii kodu
+
+
+
+virtual env - wirtualne œrodowisko, specyficzne ustawienia, modu³y, (œwie¿a kopia pythona)
+pip install virtualenv (w nowszych jest ju¿ zainstalowane)
+virtualenv mytestingenv - tworzymy virtualenv
+mytestingenv/scripts/activate - aktywujemy 
+
+w pycharm - file - settings - projekt - interpreter - po prawej mo¿emy dodaæ i stworzyæ nowe œrodiwisko virtualne
+
+
+PyPi & PIP - menad¿er pakietów(modu³ów) python
+
+pypi.python.org/pip - wszystkie paczki
+
+zainstalowane z pythonem - dzia³a z list¹ komend, 
+pip freeze > plik.txt - do pliku przekazuje wszystkie zainstalwane pakiety
+pip install -r plik.txt - zainstaluje z pliku wymagane paczki (z freeze)
+
+alt + enter przy dodawaniu import
+
+file - settings - projekty - plus
+
+
+argumenty programów - najczêœciej mieliœmy input
+mo¿na korzystaæ z plików po naziwe pliku
+
+python plik.py opcja1 opcja2 opcja3
+
+import sys
+sys.argv - lista argumentów przekazanych do Python
+['plik.py', 'opcja1', 'opcja2'] 
+
+
+
+TDD - test Driven Development - tworzenie kodu sterowane testami
+piszemy test
+uruchamiamy test
+test fail
+dopisujemy kawa³êk kodu
+uruchamiamy test
+... test przechodzi gdzy ca³a funkcjoinalnosæ jest zaimplementowa
+
+
+jednostkowy
+modu³ initest
+from unittest import TestCase
+
+class TestClass(TestCase):
+	def test_test_a(self):
+	...
+	assertEqual 
+	inne
+
+
+modu³ 
+os
+- dzia³a na plikach systemowych
+- unlink - usuwa na zawsze pliki
+
+
+shutil
+- kopiuje ca³e drzewa katalogów
+- usuwanie ca³e drzewa katalogów 
+
+
+send2trash
+- przenosi do kosza
+
+
+PIL - pillow
+zabawa na zdjêciach
+
+foto = image.open("zdj")
+print(foto)
+
+
+
+KLASY:
+konstruktor - __init__ (metoda) - podczas wywo³ania klasy
+zwyk³e metody (pierwszy argument "self")
+
+class Zwierze(object):
+	def __init__(self):
+		print("Hej")
+	
+ 	def zyj(self):
+		print("zyhe")
+
+obiekt klasy:
+zmienna = Zwierze()
+
+
+metoda na isntancji
+zmienna.zyj
+
+
+klasa dziedzicz¹ca powinna wo³aæ konstruktor ojca 
+class Kot(Zwierze):
+	def __init__(self, imie):
+	super().__init__()
+	self.imie = imie 
+
+
+
+metody dziedzicz¹ce szukaj¹ metod od lewej, 
+
+metody statyczne
+- nie potrzebuj¹ self
+- nie potrzebuj¹ instanicji klasy
+
+metoda klasowa
+- przyjmuje cls
+- jest to obiekt klasy
+- nie wymaga instrancji klasy 
