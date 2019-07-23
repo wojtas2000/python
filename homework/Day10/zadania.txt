@@ -1,0 +1,61 @@
+Zad.1
+"""
+Stworz instancje klasy Zadanie i wywolaj metode "zrob_zadanie"
+"""
+
+
+Zad.2
+# napisz klase Student przyjmujaca w konstruktorze imie i
+# posiadajacy metode "przedstaw_sie"
+# wypisujaca na ekran "mam na imie {imie}"
+# stworz instancje tej klasy z wlasnym imieniem i wywolaj "przedstaw_sie"
+
+
+Zad.3
+# stworz klase kwadrat przyjmujaca w konstruktorze
+# bok kwadratu i posiadajaca dwie metody:
+# pole - zwraca pole kwadratu
+# obwod - zwraca obwod kwadratu
+
+
+Zad.4
+# stworzmy klase Zagiel posiadajaca dwa atrybuty - powierzchnia (float)
+# oraz material (string)
+
+# stworzmy klase Jacht ktora posiada dwa atrybuty - "nazwa" (string)
+# oraz "zagiel" (instancja klasy Zagiel)
+
+
+Zad.5
+# stworzmy klase Flota posiadajaca atrybut 'jachty' bedacy poczatkowo pusta lista
+# dajmy klasie Flota metode
+# dodaj_jacht dodjacy do listy "jachty" instancje klasy Jacht (z zad 4)
+
+
+Zad.6
+# Uzywajac klas z poprzednich zadań napisz program, ktory pozwala uzytkownikowi:
+# Dodaj jacht - pyta uzytkownika o nazwe jednostki i parametry zagla i dodaje do Floty
+# Usuń jacht - Pyta użytkownika o nazwe jachtu i usuwa jacht o tej nazwie
+# Wypisz jachty - wypisuje jachty we flocie
+#
+# Prawdopodobnie trzeba dodać nowe metody do niektórych klas
+# Bez zapisywania na dysk
+
+
+
+Zad.1-dom
+"""
+a. stworzyć jak najwięcej klas, które odwzorowują otaczającą nas
+rzeczywistość, np.: telewizor, grzejnik, piekarnik, czajnik, drzewo, kwiat,
+osoba, napój, komputer itp. itd.
+
+b. tworzyć instancje tych klas – sprawdzać jak się zachowują, nauczyć się
+wydobywać z nich informacje, korzystać z metod
+
+c. jeśli czujemy się pewniej, to stwórzmy klasy, których atrybutami są inne klasy
+"""
+
+
+Zad.2-dom
+# przerobmy nasza baze (lub baze z katalogu db_with_files) tak by db_engine byl klasa przyjmujaca jako atrybut
+# nazwe pliku do zapisania bazy i wystawiajacy dotychczasowe funkcje jako metody klasowe dzialace na tym obiekcie

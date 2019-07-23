@@ -1,2 +1,0 @@
-1. NAUCZYC SIĘ DO EGZAMINU
-2. Napisać testy jednostkowe do naszej bazy danych

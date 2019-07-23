@@ -1,0 +1,78 @@
+Zad.1
+# wypisz na ekran pierwszy i ostatni element z listy
+moja_lista = ['piewszy'] + ['srodkowy'] * (2 << 3) + ['ostatni']
+
+
+Zad.2
+# wypisz element zawierajacy "TO TEN" z podanej listy
+moja_lista = [
+    # zagniezdzone listy!
+    ["a1", "b1", "c1"],  # 0
+    ["a2", "b2", "TO TEN"],  # 1
+    ["a3", "b3", "b3"],  # 2
+]
+
+
+Zad.3
+# 1) skopiuj podana liste do zmiennej "moja_lista_copy"
+# 2) przypisz referencje "moja_lista" do zmiennej "moja_lista2" (nie kopie!)
+# 3) dodaj nowy element "x" do "moja_lista"
+# 3) dodaj nowy element "y" do "moja_lista_copy"
+# 4) wypisz zawartosc "moja_lista", "moja_lista2", "moja_lista_copy"
+moja_lista = ['a', 'b', 'c']
+
+
+Zad.4
+# utworz liste zawierajaca wszystkie liczby od 15 do 115
+# wypisz pierwszy, 25 i ostatni element tej listy
+
+
+Zad.5
+"""
+Wypisuj po kolei elementy z listy za pomoca petli for az napotkasz podzielny przez 5 - wtedy przerwij petle.
+"""
+moja_lista = [1, 2, 3, 7, 4, 2, 15, 8, 12, 7, 0]
+
+
+Zad.6
+# napisz program sumujacy wszystkie elementy w podanej liscie (bez uzycia wbudowanej funkcji sum)
+# (prawidlowy wynik to 50)
+moja_lista = [1, 4, 7, 12, 12, 5, 9]
+
+
+Zad.7
+# wybierz losowo jeden kolor z listy kolorow
+# modul random! https://docs.python.org/3/library/random.html
+colors = ["red", "blue", "green", "yellow"]
+
+
+Zad.8
+# przyjmuj od uzytkownika kolejne napisy tak dlugo az wpisze on "KONIEC"
+# dodawaj kolejne wpisane napisy do listy
+# wypisz na koniec liste wszystkich napisow
+
+
+Zad.9
+# napisz program wypisujacy utworzona ponizej liste i znajdujacy najmniejsza i najwieksza wartosc w niej.
+# Program powinien wypisac:
+# Zawartosc listy: [<<dane>>]
+# Maxymalna wartosc: <<wartosc>> <<pozycja w liscie>>
+# Minimalna wartosc: <<wartosc>> <<pozycja w liscie>>
+import random
+moja_lista = list(random.sample(range(50), 10))
+
+
+Zad.10
+# Napisz program ktory znajdzie wszystkie powtorzenia w liscie
+moja_lista = [0, 1, 1, 'a', 2, 'abc', 'x', ['lista2', ''], 'a', '', 'z', 99, 't', 'www']
+
+
+Zad.11
+# napisz program ktory podzieli napis 'ala ma kota' na liste slow
+# nastepnie zamieni pierwsze slowo z ostatnim i polaczy z powrotem w
+# napis uzywajac _ zamiast spacji
+
+
+Zad.12
+# napisz program ktory wygeneruje zagniezdzona 100 razy liste z elementem 'a'
+outer = ['a']

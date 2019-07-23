@@ -1,45 +1,35 @@
 Zad 1.
-
 Przyjmuje od uzytkownika napis i wypisuje jego dlugosc
 
 
 Zad 2.
-
 Przyjmuje od uzytkownika napis i wyswietla True jesli uzytkownik wpisal
 "haslo" lub False w przeciwnym wypadku
 
 
 Zad 3.
-
 Program przyjmuajcy inta (n) i liczacy
 n + n*n + n*n*n
 
 
 Zad 4.
-
 Program liczacy pole koła o podanym promieniu  (float)
 
 
 Zad 5.
-
 Program przyjmuje liczbe (int) i wypisuje jej kwadrat ;)
 
 
 Zad 6.
-
 Program przyjmuje napis i wypisuje pierwszy i ostatni znak z tego napisu
 
 
-
 Zad 7.
-
 Program przyjmuje liczbe i wypisuje True jesli liczba jest w zakresie 5 < x < 12
 False w przeciwnym wypadku
 
 
-
 Zad 8.
-
 - przypisz do zmiennej x liczbe podana przez uzytkownika
 - do zmiennej y przypisz x
 - do y dodaj 1 i wynik przypisz do y
@@ -51,7 +41,6 @@ Zad 8.
 
 
 Zad 9.
-
 Program pyta uzytkownika o imię, nastepnie o rok urodzenia, nastepnie wzrost w cm.
 po wpisaniu wyświetla:
 
@@ -60,6 +49,7 @@ np.
 "Hello, Bartek! Masz juz 29 lat i 1.78m :)"
 
 Jezeli imie jest podane mala litera ma byc zamieniona na duza.
+
 
 Zad 10.
 Znajdz w dokumentacji string.format jak wypisac liczbe zaokraglona do 2 miejsca po przecinku
